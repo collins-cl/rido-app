@@ -1,0 +1,214 @@
+.hero {
+  margin-top: 5em;
+  padding-bottom: 5em;
+
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1150px;
+    margin: auto;
+
+    .left-details {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5em;
+
+      h2 {
+        font-size: 2.5em;
+        font-weight: bolder;
+        text-transform: uppercase;
+        max-width: 80%;
+      }
+
+      p {
+        font-size: 14px;
+        color: rgb(65, 65, 65);
+        width: 78%;
+      }
+
+      .download-options {
+        display: flex;
+        align-items: center;
+        gap: 1em;
+        width: 78%;
+
+        a {
+          width: 200px;
+          height: 40px;
+          padding: 5px 1em;
+          background-color: black;
+          border-radius: 5px;
+
+          div {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1em;
+
+            .image {
+              width: 35px;
+              height: 35px;
+            }
+
+            p {
+              color: white;
+              font-size: 10px;
+              font-weight: 200;
+
+              span {
+                font-size: 18px;
+                font-weight: 500;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .right-image {
+      img {
+        height: 500px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    margin-top: 4em;
+    padding-bottom: 5em;
+
+    .wrapper {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      max-width: 95vw;
+      gap: 3em;
+
+      .left-details {
+        display: flex;
+        flex-direction: column;
+
+        h2 {
+          max-width: 100%;
+          text-align: center;
+          font-size: 2em;
+        }
+
+        p {
+          font-size: 15px;
+          width: 100%;
+          text-align: center;
+        }
+
+        .download-options {
+          display: flex;
+          align-items: center;
+          gap: 1em;
+          width: 100%;
+          margin-top: 10px;
+
+          a {
+            width: 50%;
+            height: 45px;
+            padding: 5px 10px;
+
+            div {
+              height: 100%;
+              width: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              gap: 0.5em;
+
+              p {
+                color: white;
+                font-size: 10px;
+                font-weight: 200;
+  
+                span {
+                  font-size: 15px;
+                  font-weight: 500;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .right-image {
+        img {
+          width: 100%;
+          height: 400px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .hero {
+    margin-top: 5em;
+    padding-bottom: 5em;
+
+    .wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1em;
+      max-width: 95%;
+      margin: auto;
+
+      .left-details {
+        display: flex;
+        flex-direction: column;
+
+        h2 {
+          font-size: 2.1em;
+          max-width: 100%;
+        }
+
+        p {
+          font-size: 15px;
+          font-weight: 600;
+          width: 90%;
+        }
+
+        .download-options {
+          display: flex;
+          align-items: center;
+          gap: 0.8em;
+          width: 100%;
+
+          a {
+            width: 180px;
+            height: 40px;
+            padding: 5px 8px;
+
+            div {
+              display: flex;
+              align-items: center;
+              justify-content: space-around;
+              gap: 1em;
+              
+
+              p {
+                font-size: 11px;
+              }
+            }
+          }
+        }
+      }
+
+      .right-image {
+        img {
+          width: 350px;
+          height: 400px;
+        }
+      }
+    }
+  }
+}

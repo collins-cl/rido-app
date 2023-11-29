@@ -1,0 +1,206 @@
+.benefits {
+  margin-top: 5em;
+
+  .wrapper {
+    max-width: 1150px;
+    margin: auto;
+
+    .title {
+      text-align: center;
+      font-size: 3em;
+      font-weight: bold;
+    }
+
+    .options {
+      width: 100%;
+      margin-top: 1.5em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1.5em;
+
+      .option-a {
+        width: 120px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        border-radius: 50px;
+        border: 2px solid rgb(61, 61, 61);
+      }
+    }
+
+    .driver-section {
+      margin-top: 3em;
+
+      .wrapper {
+        display: flex;
+        align-items: center;
+        gap: 3em;
+
+        .image {
+          width: 45%;
+          height: 450px;
+          object-fit: cover;
+
+          img {
+            width: 100%;
+            height: 100%;
+            border-radius: 20px;
+          }
+        }
+
+        .description {
+          width: 50%;
+          .head {
+            font-size: 18px;
+            text-transform: uppercase;
+            font-weight: bold;
+          }
+
+          .desc-ul {
+            margin-top: 2em;
+            display: flex;
+            flex-direction: column;
+            gap: 2em;
+
+            .list-item {
+              display: flex;
+              align-items: flex-start;
+              gap: 1em;
+
+              .icons {
+                width: 30px;
+                height: 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 5px;
+                background-color: rgba(179, 224, 242, 0.729);
+
+                .icon {
+                  font-size: 16px;
+                }
+              }
+
+              .li {
+                width: 70%;
+
+                span {
+                  font-size: 18px;
+                  font-weight: bold;
+                }
+
+                p {
+                  font-size: 15px;
+                  margin-top: 10px;
+                }
+              }
+            }
+          }
+
+          .c-t-a {
+            width: 50%;
+            height: 40px;
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(92, 169, 199, 0.729);
+            margin-top: 2em;
+            cursor: pointer;
+            transition: background-color 0.2s;
+
+            a {
+              font-weight: bold;
+              font-size: 15px;
+            }
+
+            &:hover {
+              background-color: rgba(160, 217, 240, 0.729);
+            }
+          }
+        }
+      }
+
+      .rider {
+        width: 85%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .benefits {
+    margin-top: 5em;
+
+    .wrapper {
+      max-width: 90vw;
+      margin: auto;
+
+      .title {
+        font-size: 2em;
+      }
+
+      .options {
+        gap: 1em;
+      }
+
+      .driver-section {
+        margin-top: 2.5em;
+
+        .wrapper {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 2em;
+
+          .image {
+            width: 100%;
+          }
+
+          .description {
+            width: 100%;
+            .head {
+              font-size: 20px;
+            }
+
+            .desc-ul {
+              margin-top: 2em;
+
+              .list-item {
+                .li {
+                  width: 100%;
+
+                  span {
+                    font-size: 18px;
+                  }
+
+                  p {
+                    font-size: 16px;
+                    margin-top: 8px;
+                  }
+                }
+              }
+            }
+
+            .c-t-a {
+              width: 100%;
+              height: 45px;
+
+              a {
+                font-size: 16px;
+              }
+            }
+          }
+        }
+
+        .rider {
+          width: 90vw;
+          flex-direction: column-reverse;
+        }
+      }
+    }
+  }
+}

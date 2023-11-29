@@ -1,0 +1,189 @@
+.whyus {
+  margin-top: 5em;
+  padding: 5em 0;
+  background-color: rgba(225, 241, 246, 0.461);
+  border-radius: 50px;
+
+  .wrapper {
+    max-width: 1150px;
+    margin: auto;
+    margin-top: 1em;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+
+    .phone {
+      .container {
+        width: 450px;
+        height: 550px;
+        background-color: rgba(221, 241, 249, 0.729);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        overflow: hidden;
+
+        img {
+          margin-top: -7em;
+          width: 700px;
+          height: 700px;
+        }
+      }
+    }
+
+    .details {
+      width: 50%;
+
+      .head {
+        font-size: 13px;
+        font-weight: bold;
+        word-spacing: 1px;
+        width: 10em;
+        height: 27px;
+        padding: 5px 15px;
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(179, 224, 242, 0.729);
+      }
+
+      .reasons {
+        margin-top: 2em;
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+
+        .box {
+          display: flex;
+          align-items: flex-start;
+          gap: 2em;
+
+          .icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(179, 224, 242, 0.729);
+
+            .fill {
+              font-size: 25px;
+            }
+          }
+
+          .info {
+            width: 90%;
+
+            h3 {
+              font-size: 18px;
+            }
+
+            p {
+              width: 80%;
+              margin-top: 5px;
+              font-size: 14px;
+              font-weight: 500;
+              color: rgb(72, 70, 70);
+            }
+          }
+        }
+      }
+
+      .c-t-a {
+        width: 50%;
+        height: 40px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(142, 213, 241, 0.729);
+        margin-top: 2em;
+        cursor: pointer;
+        transition: background-color 0.2s;
+
+        a {
+          font-weight: bold;
+          font-size: 15px;
+        }
+
+        &:hover {
+          background-color: rgba(179, 224, 242, 0.729);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .whyus {
+    margin-top: 3em;
+    padding: 4em 0;
+    border-radius: 25px;
+
+    .wrapper {
+      max-width: 90vw;
+      margin: auto;
+      margin-top: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 2em;
+
+      .phone {
+        .container {
+          width: 95%;
+          height: 450px;
+          margin: auto;
+
+          img {
+            width: 140%;
+            height: 600px;
+          }
+        }
+      }
+
+      .details {
+        width: 100%;
+
+        .reasons {
+          margin-top: 3em;
+          display: flex;
+          flex-direction: column;
+          gap: 2em;
+
+          .box {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 1em;
+
+            .icon {
+              width: 40px;
+              height: 40px;
+            }
+
+            .info {
+              width: 100%;
+
+              p {
+                width: 100%;
+                font-size: 15px;
+              }
+            }
+          }
+        }
+
+        .c-t-a {
+          width: 100%;
+          height: 45px;
+          margin-top: 3em;
+
+          a {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
