@@ -92,7 +92,6 @@
               margin-top: 5px;
               font-size: 14px;
               font-weight: 600;
-              letter-spacing: 0.5px;
               color: rgb(63, 63, 63);
             }
           }
@@ -132,7 +131,7 @@
     border-radius: 25px;
 
     .wrapper {
-      max-width: 95vw;
+      max-width: 90vw;
       margin: auto;
       margin-top: 0;
       display: flex;
@@ -144,7 +143,7 @@
         display: flex;
         justify-content: center;
         .container {
-          width: 80%;
+          width: 90%;
           height: 450px;
           position: relative;
         }
@@ -176,6 +175,7 @@
               p {
                 width: 100%;
                 font-size: 15px;
+                font-weight: 500;
               }
             }
           }
