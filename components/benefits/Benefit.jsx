@@ -90,7 +90,7 @@ const Actions = ({ selected }) => {
               </div>
 
               <div className="c-t-a">
-                <Link href="/">Apply to drive</Link>
+                <Link href="/">Apply to driv</Link>
               </div>
             </div>
           </div>
