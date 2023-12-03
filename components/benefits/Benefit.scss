@@ -8,7 +8,7 @@
     .title {
       text-align: center;
       font-size: 3em;
-      font-weight: bold;
+      font-weight: 900;
     }
 
     .options {
@@ -43,12 +43,9 @@
           width: 45%;
           height: 450px;
           object-fit: cover;
-
-          img {
-            width: 100%;
-            height: 100%;
-            border-radius: 20px;
-          }
+          position: relative;
+          overflow: hidden;
+          border-radius: 20px;
         }
 
         .description {
@@ -56,7 +53,7 @@
           .head {
             font-size: 18px;
             text-transform: uppercase;
-            font-weight: bold;
+            font-weight: 900;
           }
 
           .desc-ul {
@@ -77,10 +74,11 @@
                 justify-content: center;
                 align-items: center;
                 border-radius: 5px;
-                background-color: rgba(179, 224, 242, 0.729);
+                background-color: black;
 
                 .icon {
                   font-size: 16px;
+                  fill: white;
                 }
               }
 
@@ -89,7 +87,7 @@
 
                 span {
                   font-size: 18px;
-                  font-weight: bold;
+                  font-weight: 900;
                 }
 
                 p {
@@ -107,18 +105,19 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: rgba(92, 169, 199, 0.729);
+            background-color: black;
             margin-top: 2em;
             cursor: pointer;
             transition: background-color 0.2s;
 
             a {
-              font-weight: bold;
+              font-weight: 900;
               font-size: 15px;
+              color: white;
             }
 
             &:hover {
-              background-color: rgba(160, 217, 240, 0.729);
+              background-color: rgb(23, 23, 23);
             }
           }
         }
@@ -174,7 +173,7 @@
                   width: 100%;
 
                   span {
-                    font-size: 18px;
+                    font-size: 19px;
                   }
 
                   p {

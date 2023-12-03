@@ -1,7 +1,6 @@
 .whyus {
   margin-top: 5em;
   padding: 5em 0;
-  background-color: rgba(225, 241, 246, 0.461);
   border-radius: 50px;
 
   .wrapper {
@@ -16,17 +15,21 @@
       .container {
         width: 450px;
         height: 550px;
-        background-color: rgba(221, 241, 249, 0.729);
+        border: 1px solid lightgray;
         display: flex;
         justify-content: center;
         align-items: center;
         border-radius: 20px;
         overflow: hidden;
+        position: relative;
 
         img {
           margin-top: -7em;
-          width: 700px;
-          height: 700px;
+          transition: margin-top 0.2s;
+        }
+
+        &:hover img {
+          margin-top: 0em;
         }
       }
     }
@@ -36,56 +39,61 @@
 
       .head {
         font-size: 13px;
-        font-weight: bold;
+        font-weight: 900;
         word-spacing: 1px;
-        width: 10em;
-        height: 27px;
+        width: 9em;
+        height: 25px;
         padding: 5px 15px;
-        border-radius: 15px;
+        border-radius: 20px;
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: rgba(179, 224, 242, 0.729);
+        color: white;
+        cursor: pointer;
+        background-color: black;
       }
 
       .reasons {
         margin-top: 2em;
         display: flex;
         flex-direction: column;
-        gap: 2em;
+        gap: 2.5em;
 
         .box {
           display: flex;
           align-items: flex-start;
-          gap: 2em;
+          gap: 1.5em;
 
           .icon {
-            width: 50px;
-            height: 50px;
+            width: 30px;
+            height: 30px;
             border-radius: 5px;
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: rgba(179, 224, 242, 0.729);
+            background-color: black;
 
             .fill {
-              font-size: 25px;
+              font-size: 18px;
+              color: white;
             }
           }
 
           .info {
-            width: 90%;
+            width: 80%;
 
             h3 {
-              font-size: 18px;
+              font-size: 15px;
+              text-transform: uppercase;
             }
 
             p {
               width: 80%;
               margin-top: 5px;
               font-size: 14px;
-              font-weight: 500;
-              color: rgb(72, 70, 70);
+              font-weight: 600;
+              letter-spacing: 0.5px;
+              color: rgb(63, 63, 63);
             }
           }
         }
@@ -94,22 +102,23 @@
       .c-t-a {
         width: 50%;
         height: 40px;
-        border-radius: 10px;
+        border-radius: 20px;
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: rgba(142, 213, 241, 0.729);
+        background-color: black;
         margin-top: 2em;
         cursor: pointer;
         transition: background-color 0.2s;
 
         a {
-          font-weight: bold;
+          font-weight: 900;
           font-size: 15px;
+          color: white;
         }
 
         &:hover {
-          background-color: rgba(179, 224, 242, 0.729);
+          background-color: rgb(28, 28, 28);
         }
       }
     }
@@ -118,12 +127,12 @@
 
 @media screen and (max-width: 1024px) {
   .whyus {
-    margin-top: 3em;
+    margin-top: 2em;
     padding: 4em 0;
     border-radius: 25px;
 
     .wrapper {
-      max-width: 90vw;
+      max-width: 95vw;
       margin: auto;
       margin-top: 0;
       display: flex;
@@ -131,15 +140,13 @@
       gap: 2em;
 
       .phone {
+        width: 100%;
+        display: flex;
+        justify-content: center;
         .container {
-          width: 95%;
+          width: 80%;
           height: 450px;
-          margin: auto;
-
-          img {
-            width: 140%;
-            height: 600px;
-          }
+          position: relative;
         }
       }
 
@@ -150,7 +157,7 @@
           margin-top: 3em;
           display: flex;
           flex-direction: column;
-          gap: 2em;
+          gap: 2.5em;
 
           .box {
             display: flex;
@@ -177,7 +184,7 @@
         .c-t-a {
           width: 100%;
           height: 45px;
-          margin-top: 3em;
+          margin-top: 2.5em;
 
           a {
             font-size: 16px;

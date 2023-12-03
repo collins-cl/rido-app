@@ -43,7 +43,7 @@ const Actions = ({ selected }) => {
         <div className="driver-section">
           <div className="wrapper">
             <div className="image">
-              <Image src={DriverImage} alt="image of driver" />
+              <Image src={DriverImage} fill alt="image of driver" />
             </div>
 
             <div className="description">
@@ -157,7 +157,7 @@ const Actions = ({ selected }) => {
             </div>
 
             <div className="image">
-              <Image src={RiderImage} alt="image of driver" />
+              <Image src={RiderImage} fill alt="image of driver" />
             </div>
           </div>
         </div>

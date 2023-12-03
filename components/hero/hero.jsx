@@ -2,7 +2,7 @@ import React from "react";
 import "./hero.scss";
 import Image from "next/image";
 import Google from "../../assets/playstore.png";
-import HeroImage from "../../assets/heroimage.png";
+import HeroImage from "../../assets/home-hero.png";
 import Apple from "../../assets/appstore.png";
 
 const Hero = () => {
@@ -17,7 +17,7 @@ const Hero = () => {
 
           <p>
             Step into a world where every ride is an experience, not just a
-            destination. Welcome to [Your Car Service Name], where convenience
+            destination. Welcome to <strong>Rido</strong>, where convenience
             meets class, and every journey becomes a seamless adventure.
           </p>
 
@@ -46,7 +46,12 @@ const Hero = () => {
         </section>
 
         <section className="right-image">
-          <Image src={HeroImage} alt="hero image showing a car and a map" />
+          <Image
+            src={HeroImage}
+            fill
+            style={{ objectFit: "cover" }}
+            alt="hero image showing a car and a map"
+          />
         </section>
       </div>
     </div>

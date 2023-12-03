@@ -13,7 +13,13 @@ const Whyus = () => {
       <div className="wrapper">
         <section className="phone">
           <div className="container">
-            <Image src={Phone} alt="an image showing rido interface" />
+            <Image
+              src={Phone}
+              fill
+              style={{ objectFit: "cover" }}
+              objectFit="cover"
+              alt="an image showing rido interface"
+            />
           </div>
         </section>
 

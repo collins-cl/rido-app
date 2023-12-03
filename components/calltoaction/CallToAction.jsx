@@ -12,7 +12,7 @@ const CallToAction = () => {
         </Link>
 
         <Link href="/">
-          Sign up to drive <MdKeyboardArrowRight />
+          Sign up to ride <MdKeyboardArrowRight />
         </Link>
       </div>
     </div>
