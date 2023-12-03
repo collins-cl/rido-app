@@ -1,12 +1,12 @@
 .cities {
-  margin-top: 5em;
+  margin-top: 7em;
   padding: 8em 0;
+  background-color: rgba(206, 243, 254, 0.461);
 
   .wrapper {
     width: 60%;
     height: 250px;
     margin: auto;
-    margin-top: 2em;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -17,7 +17,7 @@
     .title {
       text-align: center;
       color: white;
-      background-color: black;
+      background-color: rgba(4, 61, 84, 0.729);
       font-weight: 900;
       font-size: 14px;
       width: 150px;
@@ -44,7 +44,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: black;
+      background-color: rgba(2, 57, 79, 0.729);
       margin-top: 1em;
       cursor: pointer;
       transition: background-color 0.2s;
@@ -64,7 +64,6 @@
 
 @media screen and (max-width: 768px) {
   .cities {
-    margin-top: 7em;
     padding: 3em 0;
 
     .wrapper {
