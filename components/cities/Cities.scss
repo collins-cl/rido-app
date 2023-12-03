@@ -17,7 +17,7 @@
     .title {
       text-align: center;
       color: white;
-      background-color: rgba(4, 61, 84, 0.729);
+      background-color: black;
       font-weight: 900;
       font-size: 14px;
       width: 150px;
@@ -44,7 +44,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: rgba(2, 57, 79, 0.729);
+      background-color: black;
       margin-top: 1em;
       cursor: pointer;
       transition: background-color 0.2s;
@@ -64,7 +64,7 @@
 
 @media screen and (max-width: 768px) {
   .cities {
-    margin-top: 5em;
+    margin-top: 7em;
     padding: 3em 0;
 
     .wrapper {
