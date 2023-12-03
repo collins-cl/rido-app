@@ -14,7 +14,7 @@ import DriverImage from "../../assets/driver-img.jpg";
 import RiderImage from "../../assets/rider-img.jpg";
 
 const Benefit = () => {
-  const [selected, setSelected] = useState("driver");
+  const [selected, setSelected] = useState("rider");
 
   return (
     <div className="benefits">
@@ -22,11 +22,11 @@ const Benefit = () => {
         <div className="title">Earn more with Rido</div>
 
         <div className="options">
-          <div className={`option-a`} onClick={() => setSelected("driver")}>
-            As a driver
-          </div>
           <div className={`option-a`} onClick={() => setSelected("rider")}>
             As a rider
+          </div>
+          <div className={`option-a`} onClick={() => setSelected("driver")}>
+            As a driver
           </div>
         </div>
 
