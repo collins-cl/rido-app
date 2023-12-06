@@ -1,6 +1,7 @@
-import { Inter, Roboto } from "next/font/google";
+import { Roboto } from "next/font/google";
 import "./global.scss";
 import Navbar from "@/components/navbar/navbar";
+import Footer from "@/components/footer/Footer";
 
 const roboto = Roboto({
   weight: ["100", "300", "400", "500", "700", "900"],
@@ -18,6 +19,7 @@ export default function RootLayout({ children }) {
       <body className={roboto.className}>
         {/* <Navbar /> */}
         {children}
+        <Footer />
       </body>
     </html>
   );
