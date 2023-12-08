@@ -17,9 +17,13 @@
 
       h2 {
         font-size: 2.5em;
-        font-weight: 900;
+        font-weight: bold;
         text-transform: uppercase;
         max-width: 80%;
+
+        span {
+          color: rgba(94, 1, 243, 0.992);
+        }
       }
 
       p {
@@ -27,45 +31,73 @@
         width: 78%;
       }
 
-      .download-options {
+      .learn-button {
         display: flex;
         align-items: center;
         gap: 1em;
-        width: 78%;
 
-        a {
-          width: 200px;
+        .link {
+          width: 60%;
           height: 40px;
-          padding: 5px 1em;
           background-color: black;
-          border-radius: 5px;
+          color: white;
+          border-radius: 20px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
 
-          div {
-            height: 100%;
-            width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 1em;
+          &:hover {
+            transition: background-color 0.2s;
+            background-color: rgb(23, 23, 23);
+          }
+        }
 
-            .image {
-              width: 35px;
-              height: 35px;
-            }
-
-            p {
-              color: white;
-              font-size: 10px;
-              font-weight: 300;
-
-              span {
-                font-size: 18px;
-                font-weight: 500;
-              }
-            }
+        p {
+          a {
+            text-decoration: underline;
           }
         }
       }
+
+      // .download-options {
+      //   display: flex;
+      //   align-items: center;
+      //   gap: 1em;
+      //   width: 78%;
+
+      //   a {
+      //     width: 200px;
+      //     height: 40px;
+      //     padding: 5px 1em;
+      //     background-color: black;
+      //     border-radius: 5px;
+
+      //     div {
+      //       height: 100%;
+      //       width: 100%;
+      //       display: flex;
+      //       align-items: center;
+      //       justify-content: center;
+      //       gap: 1em;
+
+      //       .image {
+      //         width: 35px;
+      //         height: 35px;
+      //       }
+
+      //       p {
+      //         color: white;
+      //         font-size: 10px;
+      //         font-weight: 300;
+
+      //         span {
+      //           font-size: 18px;
+      //           font-weight: 500;
+      //         }
+      //       }
+      //     }
+      //   }
+      // }
     }
 
     .right-image {
@@ -97,54 +129,70 @@
 
         h2 {
           max-width: 100%;
-          text-align: center;
-          font-size: 1.6em;
+          text-align: left;
+          font-size: 3em;
         }
 
         p {
           font-size: 16px;
           width: 100%;
-          text-align: center;
+          text-align: left;
         }
 
-        .download-options {
+        .learn-button {
           display: flex;
+          flex-direction: column;
           align-items: center;
-          gap: 1em;
-          width: 100%;
-          margin-top: 5px;
+          gap: 1.5em;
 
-          a {
-            width: 50%;
-            height: 45px;
-            padding: 5px 10px;
-
-            div {
-              height: 100%;
-              width: 100%;
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              gap: 0.5em;
-
-              p {
-                color: white;
-                font-size: 10px;
-                font-weight: 300;
-
-                span {
-                  font-size: 15px;
-                  font-weight: 500;
-                }
-              }
-            }
+          .link {
+            width: 100%;
+            height: 40px;
+          }
+          p {
+            text-align: center;
           }
         }
+
+        // .download-options {
+        //   display: flex;
+        //   align-items: center;
+        //   gap: 1em;
+        //   width: 100%;
+        //   margin-top: 5px;
+
+        //   a {
+        //     width: 50%;
+        //     height: 45px;
+        //     padding: 5px 10px;
+
+        //     div {
+        //       height: 100%;
+        //       width: 100%;
+        //       display: flex;
+        //       align-items: center;
+        //       justify-content: center;
+        //       gap: 0.5em;
+
+        //       p {
+        //         color: white;
+        //         font-size: 10px;
+        //         font-weight: 300;
+
+        //         span {
+        //           font-size: 15px;
+        //           font-weight: 500;
+        //         }
+        //       }
+        //     }
+        //   }
+        // }
       }
 
       .right-image {
         width: 100%;
         height: 400px;
+        // display: none;
       }
     }
   }
@@ -178,29 +226,29 @@
           width: 90%;
         }
 
-        .download-options {
-          display: flex;
-          align-items: center;
-          gap: 0.8em;
-          width: 100%;
+        // .download-options {
+        //   display: flex;
+        //   align-items: center;
+        //   gap: 0.8em;
+        //   width: 100%;
 
-          a {
-            width: 180px;
-            height: 40px;
-            padding: 5px 8px;
+        //   a {
+        //     width: 180px;
+        //     height: 40px;
+        //     padding: 5px 8px;
 
-            div {
-              display: flex;
-              align-items: center;
-              justify-content: space-around;
-              gap: 1em;
+        //     div {
+        //       display: flex;
+        //       align-items: center;
+        //       justify-content: space-around;
+        //       gap: 1em;
 
-              p {
-                font-size: 11px;
-              }
-            }
-          }
-        }
+        //       p {
+        //         font-size: 11px;
+        //       }
+        //     }
+        //   }
+        // }
       }
 
       .right-image {

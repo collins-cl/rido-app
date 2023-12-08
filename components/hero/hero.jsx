@@ -4,6 +4,7 @@ import Image from "next/image";
 import Google from "../../assets/playstore.png";
 import HeroImage from "../../assets/home-hero.png";
 import Apple from "../../assets/appstore.png";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -11,8 +12,8 @@ const Hero = () => {
       <div className="wrapper">
         <section className="left-details">
           <h2>
-            Ride the Revolution: <br />
-            Your Journey, Your Way!
+            Ride the <span>Revolution:</span> <br />
+            Your Journey, <span>Your Way!</span>
           </h2>
 
           <p>
@@ -21,7 +22,14 @@ const Hero = () => {
             meets class, and every journey becomes a seamless adventure.
           </p>
 
-          <div className="download-options">
+          <div className="learn-button">
+            <Link href="/" className="link">Learn more about Rido</Link>{" "}
+            <p>
+              <Link href="/">Proceed to download apps</Link>
+            </p>
+          </div>
+
+          {/* <div className="download-options">
             <a href="http://" target="_blank" rel="noopener noreferrer">
               <div className="google">
                 <Image alt="" src={Google} className="image" />
@@ -42,7 +50,7 @@ const Hero = () => {
                 </p>
               </div>
             </a>
-          </div>
+          </div> */}
         </section>
 
         <section className="right-image">
