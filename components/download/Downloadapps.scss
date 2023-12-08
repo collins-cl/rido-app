@@ -96,6 +96,13 @@
         width: 100%;
         margin-top: 2em;
 
+        .options {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          gap: 1em;
+        }
+
         .apps-container {
           width: 100%;
           margin: auto;
