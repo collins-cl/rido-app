@@ -144,9 +144,11 @@
 
       .title {
         font-size: 2em;
+        text-align: left;
       }
 
       .options {
+        justify-content: flex-start;
         gap: 1em;
       }
 

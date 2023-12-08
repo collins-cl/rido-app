@@ -9,6 +9,8 @@ import Link from "next/link";
 const Hero = () => {
   return (
     <div className="hero">
+      <div className="hero-logo">Rido.</div>
+
       <div className="wrapper">
         <section className="left-details">
           <h2>
@@ -23,7 +25,9 @@ const Hero = () => {
           </p>
 
           <div className="learn-button">
-            <Link href="/" className="link">Learn more about Rido</Link>{" "}
+            <Link href="/" className="link">
+              Learn more about Rido
+            </Link>{" "}
             <p>
               <Link href="/">Proceed to download apps</Link>
             </p>
