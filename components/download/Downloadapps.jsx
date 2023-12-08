@@ -1,44 +1,65 @@
 /* eslint-disable react/no-unescaped-entities */
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 import "./Downloadapps.scss";
 import { MdKeyboardArrowRight } from "react-icons/md";
+import { BsQrCode } from "react-icons/bs";
 
 const Downloadapps = () => {
+  const [selected, setSelected] = useState("rider");
   return (
     <div className="download">
       <div className="wrapper">
         <div className="title">It's easier in our apps</div>
 
-        <div className="section">
-          <a href="http://" target="_blank" rel="noopener noreferrer">
-            <div className="box">
-              <div className="img"></div>
+        <div className="container">
+          <div className="options">
+            <p onClick={() => setSelected("rider")}>Rider</p>
+            <p onClick={() => setSelected("driver")}>Driver</p>
+          </div>
 
-              <div className="desc">
-                <p>Request rides in seconds</p>
-                <span>Scan QR code to download app</span>
-              </div>
-
-              <MdKeyboardArrowRight className="icon" />
-            </div>
-          </a>
-
-          <a href="http://" target="_blank" rel="noopener noreferrer">
-            <div className="box">
-              <div className="img"></div>
-
-              <div className="desc">
-                <p>Register to be a driver</p>
-                <span>Scan QR code to download app</span>
-              </div>
-
-              <MdKeyboardArrowRight className="icon" />
-            </div>
-          </a>
+          <div className="apps-container">
+            <SelectedApp selected={selected} />
+          </div>
         </div>
       </div>
     </div>
   );
+};
+
+const SelectedApp = ({ selected }) => {
+  switch (selected) {
+    case "rider":
+      return (
+        <div className="box1">
+          <section>
+            <p>Request in seconds, ride in minutes.</p>
+            <span>
+              Scan the QR code with your phone camera to download the Rido app.
+              Available for iOS and Android devices.
+            </span>
+          </section>
+
+          <BsQrCode className="icon" />
+        </div>
+      );
+
+    case "driver":
+      return (
+        <div className="box1">
+          <section>
+            <p>Set your own hours. Earn on your own terms.</p>
+            <span>
+              Scan the QR code with your phone camera to download the Rido app.
+              Available for iOS and Android devices.
+            </span>
+          </section>
+
+          <BsQrCode className="icon" />
+        </div>
+      );
+  }
 };
 
 export default Downloadapps;

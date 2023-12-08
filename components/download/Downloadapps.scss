@@ -11,44 +11,70 @@
       text-decoration: underline;
     }
 
-    .section {
+    .container {
       width: 100%;
-      margin-top: 4em;
-      display: flex;
-      justify-content: space-between;
+      margin-top: 3em;
 
-      a {
-        width: 47%;
-        height: 180px;
-        background-color: rgb(247, 246, 246);
+      .options {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1em;
 
-        .box {
+        p {
+          width: 100px;
+          height: 35px;
+          border-radius: 20px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border: 1px solid black;
+          cursor: pointer;
+
+          &:hover {
+            background-color: rgb(238, 236, 236);
+          }
+        }
+      }
+
+      .apps-container {
+        width: 80%;
+        margin: auto;
+        margin-top: 2em;
+        height: 350px;
+        border-radius: 10px;
+        padding: 3em;
+        background-color: black;
+        color: white;
+
+        .box1 {
           width: 100%;
           height: 100%;
           display: flex;
-          justify-content: space-around;
           align-items: center;
+          justify-content: space-around;
 
-          .img {
-            width: 120px;
-            height: 120px;
-            background-color: lightgray;
-          }
+          section {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
 
-          .desc {
             p {
-              font-size: 20px;
-              font-weight: 900;
+              font-size: 3em;
+              font-weight: bold;
             }
 
             span {
-              font-size: 14px;
-              margin-top: 10px;
+              font-size: 16px;
+              margin-top: 15px;
             }
           }
 
           .icon {
-            font-size: 25px;
+            font-size: 9em;
           }
         }
       }
@@ -58,7 +84,6 @@
 
 @media screen and (max-width: 768px) {
   .download {
-
     .wrapper {
       max-width: 95vw;
       margin: auto;
@@ -67,45 +92,39 @@
         font-size: 2em;
       }
 
-      .section {
+      .container {
         width: 100%;
-        margin-top: 4em;
-        display: flex;
-        flex-direction: column;
-        gap: 1.5em;
+        margin-top: 2em;
 
-        a {
-          width: 90%;
-          padding: 15px;
+        .apps-container {
+          width: 100%;
+          margin: auto;
+          margin-top: 2em;
           height: fit-content;
+          padding: 2em 0;
 
-          .box {
-            width: 100%;
+          .box1 {
+            width: 90%;
             height: 100%;
+            margin: auto;
             display: flex;
             flex-direction: column;
+            justify-content: flex-start;
             align-items: flex-start;
-            gap: 10px;
+            gap: 15px;
 
-            .img {
-              width: 100px;
-              height: 100px;
-            }
+            section {
+              width: 100%;
+              height: fit-content;
 
-            .desc {
               p {
-                font-size: 20px;
-                font-weight: 900;
-              }
-
-              span {
-                font-size: 14px;
-                margin-top: 10px;
+                font-size: 1.8em;
               }
             }
 
             .icon {
-              display: none;
+              margin-top: 10px;
+              font-size: 6em;
             }
           }
         }
@@ -116,14 +135,9 @@
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .download {
-
     .wrapper {
       max-width: 95vw;
       margin: auto;
-
-      .icon {
-        display: none;
-      }
     }
   }
 }

@@ -20,14 +20,18 @@
       gap: 1.5em;
 
       .option-a {
-        width: 120px;
-        height: 40px;
+        width: 100px;
+        height: 35px;
+        border-radius: 20px;
         display: flex;
         justify-content: center;
         align-items: center;
+        border: 1px solid black;
         cursor: pointer;
-        border-radius: 50px;
-        border: 2px solid rgb(61, 61, 61);
+
+        &:hover {
+          background-color: rgb(238, 236, 236);
+        }
       }
     }
 
